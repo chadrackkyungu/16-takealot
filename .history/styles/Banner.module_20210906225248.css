@@ -1,0 +1,5 @@
+.banner {
+  border: 5px solid red;
+  height: 30%;
+  z-index: 0;
+}

@@ -1,0 +1,19 @@
+.footer {
+  background: #0b79bf;
+  color: #ffffff;
+  /* justify-content: center; */
+  padding: 2em 0;
+}
+.footer ul li {
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 3em;
+  }
+}

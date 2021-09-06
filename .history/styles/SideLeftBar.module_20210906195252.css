@@ -1,0 +1,14 @@
+.leftSideBar {
+  border: 5px solid red;
+  height: 100vh;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  overflow: hidden;
+}
+
+.icons__container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}

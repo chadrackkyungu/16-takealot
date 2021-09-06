@@ -1,0 +1,7 @@
+.container__header {
+  background: yellow;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}

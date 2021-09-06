@@ -1,0 +1,10 @@
+.footer {
+  background: #0b79bf;
+  color: #ffffff;
+  /* justify-content: center; */
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
+}

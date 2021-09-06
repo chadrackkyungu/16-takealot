@@ -1,0 +1,31 @@
+.container__header {
+  background: white;
+  min-height: 5em;
+  box-shadow: 0 0 0.8em rgba(218, 218, 218, 0.671);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 10vh;
+  margin: 0 auto;
+}
+.logo {
+  width: 15%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.input__container {
+  border: 1px solid #dadada;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+}
+.input__container input {
+  padding: 0.8em;
+  border: none;
+}

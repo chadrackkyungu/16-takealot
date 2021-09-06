@@ -1,0 +1,8 @@
+.leftSideBar {
+  border: 5px solid red;
+  height: 100vh;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  overflow: hidden;
+}

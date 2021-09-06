@@ -1,0 +1,56 @@
+.leftSideBar {
+  /* border: 5px solid red; */
+  background-color: white;
+  height: 100vh;
+  overflow-x: hidden;
+  /* padding-top: 22px; */
+  position: fixed;
+  width: 10%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  box-shadow: 0 0 0.3em rgba(221, 221, 221, 0.57);
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 120;
+}
+.tooltiptext {
+  font-size: 16px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* .img {
+  transform: rotate(45deg);
+  border: 5px solid red;
+} */
+.icons__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60%;
+}

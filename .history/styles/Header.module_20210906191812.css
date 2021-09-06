@@ -1,0 +1,18 @@
+.container__header {
+  background: yellow;
+  min-height: 5em;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.logo {
+  width: 15%;
+  border: 5px solid black;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}

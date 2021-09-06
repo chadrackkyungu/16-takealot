@@ -1,0 +1,8 @@
+.container__header {
+  background: yellow;
+  min-height: 10em;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}

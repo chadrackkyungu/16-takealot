@@ -1,0 +1,19 @@
+.leftSideBar {
+  border: 5px solid red;
+  height: 100vh;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.img {
+  transform: rotate(-90deg);
+}
+.icons__container {
+  display: flex;
+  flex-direction: column;
+}
