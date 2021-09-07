@@ -1,0 +1,17 @@
+*,
+::before,
+::after {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background: blue;
+  color: white;
+  padding: 1em;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}

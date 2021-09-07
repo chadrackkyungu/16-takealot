@@ -1,0 +1,16 @@
+.product__container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productsList {
+  background-color: #ffffff;
+  width: 30%;
+}
+.product__img {
+}
+.img {
+  width: 100%;
+}

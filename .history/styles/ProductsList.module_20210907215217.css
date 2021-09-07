@@ -1,0 +1,13 @@
+.product__container {
+  width: 90%;
+  margin: 0 auto;
+}
+.productsList {
+  background-color: #ffffff;
+  width: 40%;
+}
+.product__img {
+}
+.img {
+  width: 100%;
+}

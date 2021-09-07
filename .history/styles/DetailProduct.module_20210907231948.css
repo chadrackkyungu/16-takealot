@@ -1,0 +1,16 @@
+.detailProduct {
+  border: 5px solid #da1515;
+  margin-top: 7em;
+}
+.welcom__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2em;
+}
+.back__btn {
+  background: white;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  box-shadow: 4px 3px 8px 1px #ebebeb;
+  -webkit-box-shadow: 4px 3px 8px 1px #d4d4d4;
+}

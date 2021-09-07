@@ -1,0 +1,14 @@
+.filterButton ul {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.filterButton ul li:first-child {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .filterButton ul {
+    justify-content: space-around;
+  }
+}

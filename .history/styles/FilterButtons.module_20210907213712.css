@@ -1,0 +1,7 @@
+.filterButton ul {
+  display: flex;
+}
+
+.filterButton ul:first-child {
+  font-weight: 700;
+}

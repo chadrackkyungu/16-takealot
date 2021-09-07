@@ -1,0 +1,30 @@
+.product__container {
+  width: 90%;
+  margin: 0 auto;
+  gap: 2em;
+  margin-top: 4em;
+}
+.productsList {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.product__img {
+  border: 5px solid red;
+  height: 20vh;
+  position: relative;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .product__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .productsList {
+    width: 30%;
+  }
+}

@@ -1,0 +1,35 @@
+.product__container {
+  width: 90%;
+  margin: 0 auto;
+  gap: 2em;
+  margin-top: 4em;
+}
+.productsList {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.product__img {
+  /* border: 5px solid red; */
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+.img {
+  width: 100%;
+}
+.btn__view {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+@media (min-width: 768px) {
+  .product__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .productsList {
+    width: 30%;
+  }
+}

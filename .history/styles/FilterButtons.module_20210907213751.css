@@ -1,0 +1,8 @@
+.filterButton ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.filterButton ul li:first-child {
+  font-weight: 700;
+}

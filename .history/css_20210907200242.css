@@ -1,0 +1,14 @@
+*,
+::before,
+::after {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background: blue;
+  padding: 1em;
+}
+nav ul {
+  display: flex;
+}
