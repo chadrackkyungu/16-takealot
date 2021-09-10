@@ -30,7 +30,7 @@ function Save() {
           </div>
 
           <div className={styles.product__detail__description}>
-            <h2>Men’s Shoe</h2>
+            <h2>Women’s Cloths</h2>
 
             <p>
               Great outerwear jackets for Spring/Autumn/Winter, suitable for
@@ -41,48 +41,6 @@ function Save() {
             <h2 className={styles.price}>
               <span> R 45.99 </span>
               <span className={styles.old__price}>R 65</span>
-            </h2>
-
-            <div className={styles.delivery}>
-              <DoneAllIcon />
-              <p>Free Delivery Available -Berea, South Africa </p>
-            </div>
-            <div className={styles.add__to__cart}>
-              <div className={styles.btn__add__container}>
-                <AddShoppingCartIcon />
-                <span>Add To Cart</span>
-              </div>
-
-              <div className={styles.btn__save}>
-                <BookmarksIcon />
-              </div>
-
-              <div className={styles.btn__stars}>
-                <StarIcon />
-                <StarIcon />
-                <StarIcon />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.product__detail__container}>
-          <div className={styles.product__img}>
-            <Image src={Banner2} alt="logo" className={styles.img} />
-          </div>
-
-          <div className={styles.product__detail__description}>
-            <h2>Women’s Cloths</h2>
-
-            <p>
-              Great outerwear jackets for Spring/Autumn/Winter, suitable for
-              many occasions, such as working, hiking, camping, mountain/rock
-              climbing, cycling, traveling or other outdoors.
-            </p>
-
-            <h2 className={styles.price}>
-              <span> R 55.99 </span>
-              <span className={styles.old__price}>R 75</span>
             </h2>
 
             <div className={styles.delivery}>

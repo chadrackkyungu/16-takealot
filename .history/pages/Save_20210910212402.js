@@ -30,7 +30,7 @@ function Save() {
           </div>
 
           <div className={styles.product__detail__description}>
-            <h2>Men’s Shoe</h2>
+            <h2>Men’s Cloths</h2>
 
             <p>
               Great outerwear jackets for Spring/Autumn/Winter, suitable for

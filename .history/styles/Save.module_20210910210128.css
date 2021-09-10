@@ -1,0 +1,29 @@
+.save__container {
+  background: white;
+  margin: 1em;
+  margin-top: 12em;
+  padding: 1em;
+}
+.back__btn {
+  background: white;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  box-shadow: 4px 3px 8px 1px #fafafa;
+  -webkit-box-shadow: 4px 3px 8px 1px #dfdfdf;
+  cursor: pointer;
+  width: 65px;
+}
+.user__email {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .welcom__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .welcom__container {
+    margin: 0 2em;
+  }
+}

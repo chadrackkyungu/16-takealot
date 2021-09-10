@@ -30,7 +30,7 @@ function Save() {
           </div>
 
           <div className={styles.product__detail__description}>
-            <h2>Men’s Shoe</h2>
+            <h2>Women’s Cloths</h2>
 
             <p>
               Great outerwear jackets for Spring/Autumn/Winter, suitable for
@@ -68,7 +68,7 @@ function Save() {
 
         <div className={styles.product__detail__container}>
           <div className={styles.product__img}>
-            <Image src={Banner2} alt="logo" className={styles.img} />
+            <Image src={Banner1} alt="logo" className={styles.img} />
           </div>
 
           <div className={styles.product__detail__description}>

@@ -30,7 +30,7 @@ function Save() {
           </div>
 
           <div className={styles.product__detail__description}>
-            <h2>Men’s Shoe</h2>
+            <h2>Women’s Cloths</h2>
 
             <p>
               Great outerwear jackets for Spring/Autumn/Winter, suitable for
@@ -68,7 +68,7 @@ function Save() {
 
         <div className={styles.product__detail__container}>
           <div className={styles.product__img}>
-            <Image src={Banner2} alt="logo" className={styles.img} />
+            <Image src={Banner3} alt="logo" className={styles.img} />
           </div>
 
           <div className={styles.product__detail__description}>
@@ -81,8 +81,8 @@ function Save() {
             </p>
 
             <h2 className={styles.price}>
-              <span> R 55.99 </span>
-              <span className={styles.old__price}>R 75</span>
+              <span> R 45.99 </span>
+              <span className={styles.old__price}>R 65</span>
             </h2>
 
             <div className={styles.delivery}>

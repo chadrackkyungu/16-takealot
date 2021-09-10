@@ -33,7 +33,7 @@ function LeftSideBar() {
           <Link passHref href="/save">
             <BookmarkBorderIcon fontSize="large" />
           </Link>
-          <span className={styles.tooltiptext}>save</span>
+          <span className={styles.tooltiptext}>Favorite</span>
         </div>
         <div className={styles.tooltip}>
           <Link passHref href="/orders">

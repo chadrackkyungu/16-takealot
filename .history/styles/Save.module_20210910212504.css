@@ -89,7 +89,6 @@
   }
   .product__detail__container {
     display: flex;
-    margin: 2em 4em;
   }
   .product__detail__description {
     width: 70%;
@@ -98,5 +97,9 @@
     width: 70%;
     justify-content: space-between;
     margin-top: 1em;
+  }
+
+  .product__detail__container {
+    margin: 2em 4em;
   }
 }
