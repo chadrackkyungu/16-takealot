@@ -1,4 +1,5 @@
 .basket__container {
+  /* border: 2px solid red; */
   background: white;
   margin: 1em;
   margin-top: 7em;
@@ -21,6 +22,7 @@
 .price__container {
   display: flex;
   justify-content: space-between;
+  /* border: 5px solid red; */
   margin: 0 1em 0 0;
   cursor: pointer;
   margin-top: 2em;

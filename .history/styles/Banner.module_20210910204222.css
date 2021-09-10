@@ -15,11 +15,14 @@
   .banner__container {
     margin: 1em;
     margin-top: 6em;
+    /* border: 2px solid #ee1b1b; */
+    height: 30vh;
   }
   .carouselStyle {
-    height: 40vh;
+    /* border: 2px solid #ee1b1b; */
+    height: 30vh;
   }
   .carousel__img {
-    max-width: 70%;
+    max-width: 60%;
   }
 }

@@ -1,8 +1,9 @@
 .basket__container {
+  /* border: 2px solid red; */
   background: white;
-  margin: 1em;
+  margin: 2em;
   margin-top: 7em;
-  padding: 1em;
+  padding: 2em;
 }
 .back__btn {
   background: white;
@@ -21,6 +22,7 @@
 .price__container {
   display: flex;
   justify-content: space-between;
+  /* border: 5px solid red; */
   margin: 0 1em 0 0;
   cursor: pointer;
   margin-top: 2em;
@@ -89,10 +91,6 @@
 }
 
 @media (min-width: 768px) {
-  .basket__container {
-    margin: 2em;
-    padding: 2em;
-  }
   .welcom__container,
   .cart__title {
     display: flex;
