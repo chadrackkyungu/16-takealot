@@ -71,7 +71,7 @@ function basket() {
 
               <div className={styles.price__container}>
                 <div>
-                  <span className={styles.price}>R 75.98 </span>
+                  <span className={styles.price}>R 75.99 </span>
                   <span className={styles.old__price}>R 85.99 </span>
                 </div>
 

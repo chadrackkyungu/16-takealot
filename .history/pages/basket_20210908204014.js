@@ -27,7 +27,6 @@ function basket() {
 
       <div className={styles.cart__content}>
         <div className={styles.cart__item__container}>
-          {/* *EACH CART IN THE BASKET */}
           <div className={styles.each__cart}>
             <div className={styles.img__cart__container}>
               <Image src={Banner1} alt="logo" className={styles.img} />
@@ -43,36 +42,6 @@ function basket() {
                 <div>
                   <span className={styles.price}>R 45.99 </span>
                   <span className={styles.old__price}>R 55.99 </span>
-                </div>
-
-                <div className={styles.btns__container}>
-                  <button>-</button>
-                  <span>2</span>
-                  <button>+</button>
-
-                  <div className={styles.delete__btn}>
-                    <DeleteForeverIcon fontSize="large" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* SECON ITEM IN THE BASKET */}
-          <div className={styles.each__cart}>
-            <div className={styles.img__cart__container}>
-              <Image src={Banner2} alt="logo" className={styles.img} />
-            </div>
-
-            <div>
-              <p>
-                Great outerwear Spring/Autumn/Winter, suitable for many
-                occasions, such as working.....
-              </p>
-
-              <div className={styles.price__container}>
-                <div>
-                  <span className={styles.price}>R 75.98 </span>
-                  <span className={styles.old__price}>R 85.99 </span>
                 </div>
 
                 <div className={styles.btns__container}>

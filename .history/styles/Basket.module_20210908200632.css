@@ -1,0 +1,41 @@
+.basket__container {
+  /* border: 2px solid red; */
+  background: white;
+  margin: 2em;
+  margin-top: 7em;
+  padding: 2em;
+}
+.back__btn {
+  background: white;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  box-shadow: 4px 3px 8px 1px #fafafa;
+  -webkit-box-shadow: 4px 3px 8px 1px #dfdfdf;
+  cursor: pointer;
+  width: 65px;
+}
+.user__email {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.price__container {
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid red;
+  margin: 0 0 1em 0;
+}
+
+@media (min-width: 768px) {
+  .welcom__container,
+  .cart__title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .welcom__container {
+    margin: 0 2em;
+  }
+  .cart__title {
+    margin: 0 2em;
+  }
+}

@@ -1,0 +1,89 @@
+.basket__container {
+  /* border: 2px solid red; */
+  background: white;
+  margin: 2em;
+  margin-top: 7em;
+  padding: 2em;
+}
+.back__btn {
+  background: white;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  box-shadow: 4px 3px 8px 1px #fafafa;
+  -webkit-box-shadow: 4px 3px 8px 1px #dfdfdf;
+  cursor: pointer;
+  width: 65px;
+}
+.user__email {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.price__container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 5px solid red; */
+  margin: 0 1em 0 0;
+  cursor: pointer;
+  margin-top: 2em;
+}
+.price__container .price {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.price__container .old__price {
+  font-size: 0.8rem;
+  color: red;
+  text-decoration: line-through;
+}
+
+.btns__container {
+  display: flex;
+  gap: 0.5em;
+}
+.btns__container button {
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  background: white;
+  box-shadow: 4px 3px 8px 1px #fafafa;
+  -webkit-box-shadow: 4px 3px 8px 1px #dfdfdf;
+  padding: 0.4em 0.7em;
+  border-radius: 5px;
+}
+.delete__btn {
+  color: red;
+}
+
+.free__deliver {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0bbf6883;
+  padding: 0.3em;
+}
+.free__deliver span {
+  font-size: 0.9rem;
+}
+.proceed__checkout small {
+  color: #b9b9b9;
+}
+.btn__proceed {
+  background: #3b41dc;
+  color: white;
+  margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+  .welcom__container,
+  .cart__title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .welcom__container {
+    margin: 0 2em;
+  }
+  .cart__title {
+    margin: 0 2em;
+  }
+}

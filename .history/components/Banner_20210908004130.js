@@ -3,6 +3,7 @@ import Image from "next/image";
 import Banner1 from "../images/Banner/banner1.png";
 import Banner2 from "../images/Banner/banner2.png";
 import Banner3 from "../images/Banner/banner3.png";
+import Banner4 from "../images/Banner/banner4.png";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
