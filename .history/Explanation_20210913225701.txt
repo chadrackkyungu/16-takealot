@@ -1,0 +1,8 @@
+
+Note: when you click on the item and it takes to the details page that page should always follow this structured which is inside here 
+/pages/productDetails/[id]/index.js
+
+
+for Rexux installation 
+# NPM
+npm install @reduxjs/toolkit
