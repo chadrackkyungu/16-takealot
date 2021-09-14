@@ -20,7 +20,7 @@ import { addTobasket } from "../../../Redux/Slice/slices";
 // * Actions for adding to Bookmark
 import { addToBookmark } from "../../../Redux/Slice/FavoriteSlice";
 
-function DetailProduct({ productDet }) {
+function detailProduct({ productDet }) {
   const dispatch = useDispatch();
   // const Fav_items = useSelector(selectAllFav_Items);
 
@@ -124,7 +124,7 @@ function DetailProduct({ productDet }) {
   );
 }
 
-export default DetailProduct;
+export default detailProduct;
 
 export const getServerSideProps = async (context) => {
   const response = await fetch(
