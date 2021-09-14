@@ -37,8 +37,7 @@ function Basket() {
         {/* Display empty image if there is nothing in the cart */}
         {items.length === 0 ? (
           <div className={styles.imgEmpty}>
-            <Image src={EmptyBasket} alt="logo" width={500} height={500} />
-            <h1>0</h1>
+            <Image src={EmptyBasket} alt="logo" width={500} height={500} />0
           </div>
         ) : (
           <h3></h3>

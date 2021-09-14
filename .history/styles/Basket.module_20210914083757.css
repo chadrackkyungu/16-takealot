@@ -22,18 +22,8 @@
   margin: 0 auto;
   align-self: center;
   margin-left: 5em;
+  border: 5px solid red;
   width: 50%;
-}
-.imgEmpty {
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-.imgEmpty h1 {
-  position: absolute;
-  top: 75px;
-  bottom: 0;
-  color: white;
 }
 
 .description {

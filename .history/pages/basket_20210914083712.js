@@ -36,10 +36,11 @@ function Basket() {
       <div className={styles.cart__content}>
         {/* Display empty image if there is nothing in the cart */}
         {items.length === 0 ? (
-          <div className={styles.imgEmpty}>
-            <Image src={EmptyBasket} alt="logo" width={500} height={500} />
-            <h1>0</h1>
-          </div>
+          <h3 style={{ textAlign: "center", fontWeight: "bold", fontSize: 36 }}>
+            <div className={styles.imgEmpty}>
+              <Image src={EmptyBasket} alt="logo" width={500} height={500} />
+            </div>
+          </h3>
         ) : (
           <h3></h3>
         )}

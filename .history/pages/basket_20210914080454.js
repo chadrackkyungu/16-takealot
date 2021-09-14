@@ -34,17 +34,20 @@ function Basket() {
       </div>
 
       <div className={styles.cart__content}>
-        {/* Display empty image if there is nothing in the cart */}
         {items.length === 0 ? (
-          <div className={styles.imgEmpty}>
-            <Image src={EmptyBasket} alt="logo" width={500} height={500} />
-            <h1>0</h1>
-          </div>
+          <h3 style={{ textAlign: "center", fontWeight: "bold", fontSize: 36 }}>
+            <Image
+              src={EmptyBasket}
+              alt="logo"
+              className={styles.img}
+              width={500}
+              height={500}
+            />
+          </h3>
         ) : (
           <h3></h3>
         )}
 
-        {/* each items cart in the Box */}
         <div className={styles.cart__item__container}>
           {items.map((item) => {
             const { id, title, price, description, category, image } = item;
@@ -62,7 +65,6 @@ function Basket() {
           })}
         </div>
 
-        {/* Proceed to checkout cart */}
         <div className={styles.proceed__checkout}>
           <h2>Checkout</h2>
 
@@ -82,19 +84,9 @@ function Basket() {
           <small>
             This price is exclusive of taxes. GST will be added during checkout.
           </small>
-          {total > 0 ? (
-            <form action="#" method="POST">
-              <button className={styles.btn__proceed}>
-                Proceed to Payment
-              </button>
-            </form>
-          ) : (
-            <form>
-              <button className={styles.btn__un_proceed} disabled>
-                You can not Proceed with Payment
-              </button>
-            </form>
-          )}
+          <form action="#" method="POST">
+            <button className={styles.btn__proceed}>Proceed to Payment</button>
+          </form>
         </div>
       </div>
     </div>

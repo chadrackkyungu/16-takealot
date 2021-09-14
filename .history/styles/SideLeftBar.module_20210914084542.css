@@ -34,12 +34,7 @@
 
 .cartLenght {
   position: absolute;
-  top: -25px;
-  left: 20px;
-  background: blue;
-  padding: 0.2em 0.6em;
-  border-radius: 100px;
-  color: white;
+  top: -15px;
 }
 
 /* * SIDE BAR */

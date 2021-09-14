@@ -38,7 +38,6 @@ function Basket() {
         {items.length === 0 ? (
           <div className={styles.imgEmpty}>
             <Image src={EmptyBasket} alt="logo" width={500} height={500} />
-            <h1>0</h1>
           </div>
         ) : (
           <h3></h3>

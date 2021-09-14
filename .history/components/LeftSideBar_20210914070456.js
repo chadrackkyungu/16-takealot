@@ -34,7 +34,7 @@ function LeftSideBar() {
             <AddShoppingCartIcon fontSize="large" />
           </Link>
           <span className={styles.tooltiptext}>Basket</span>
-          <span className={styles.cartLenght}>{items.length}</span>
+          <span>{items.length}</span>
         </div>
         <div className={styles.tooltip}>
           <Link passHref href="/save">

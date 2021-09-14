@@ -3,19 +3,41 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Basket.module.css";
 
+// import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 import DoneAllIcon from "@material-ui/icons/DoneAll";
 
-import BasketCart from "../components/BasketCart";
-
+// import Banner1 from "../images/Banner/banner1.png";
 import EmptyBasket from "../images/emptybasket.png";
 
 // *Redux
 import { useSelector } from "react-redux";
-import { selectItems, selectTotal } from "../Redux/Slice/slices";
+import { useDispatch } from "react-redux";
 
-function Basket() {
+import {
+  selectItems,
+  selectTotal,
+  removeFromBasket,
+  incrementQuantity,
+  decrementQuantity,
+} from "../Redux/Slice/slices";
+
+function basket() {
+  const dispatch = useDispatch();
+
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
+
+  const addItemToBasket = () => {
+    dispatch(incrementQuantity({}));
+  };
+
+  const decreaseItems = () => {
+    dispatch(decrementQuantity({}));
+  };
+
+  const remoFromCart = () => {
+    dispatch(removeFromBasket({}));
+  };
 
   return (
     <div className={styles.basket__container}>
@@ -34,35 +56,22 @@ function Basket() {
       </div>
 
       <div className={styles.cart__content}>
-        {/* Display empty image if there is nothing in the cart */}
         {items.length === 0 ? (
-          <div className={styles.imgEmpty}>
-            <Image src={EmptyBasket} alt="logo" width={500} height={500} />
-            <h1>0</h1>
-          </div>
+          <h3 style={{ textAlign: "center", fontWeight: "bold", fontSize: 36 }}>
+            <Image
+              src={EmptyBasket}
+              alt="logo"
+              className={styles.img}
+              width={500}
+              height={500}
+            />
+          </h3>
         ) : (
-          <h3></h3>
+          <h3
+            style={{ textAlign: "center", fontWeight: "bold", fontSize: 36 }}
+          ></h3>
         )}
 
-        {/* each items cart in the Box */}
-        <div className={styles.cart__item__container}>
-          {items.map((item) => {
-            const { id, title, price, description, category, image } = item;
-            return (
-              <BasketCart
-                key={id}
-                id={id}
-                image={image}
-                price={price}
-                description={description}
-                title={title}
-                category={category}
-              />
-            );
-          })}
-        </div>
-
-        {/* Proceed to checkout cart */}
         <div className={styles.proceed__checkout}>
           <h2>Checkout</h2>
 
@@ -79,26 +88,20 @@ function Basket() {
           </div>
 
           <h3>Sub-Total : R {total}</h3>
+
+          {/* <span>Number of item 2</span> */}
+
           <small>
             This price is exclusive of taxes. GST will be added during checkout.
           </small>
-          {total > 0 ? (
-            <form action="#" method="POST">
-              <button className={styles.btn__proceed}>
-                Proceed to Payment
-              </button>
-            </form>
-          ) : (
-            <form>
-              <button className={styles.btn__un_proceed} disabled>
-                You can not Proceed with Payment
-              </button>
-            </form>
-          )}
+
+          <form action="#" method="POST">
+            <button className={styles.btn__proceed}>Proceed to Payment</button>
+          </form>
         </div>
       </div>
     </div>
   );
 }
 
-export default Basket;
+export default basket;

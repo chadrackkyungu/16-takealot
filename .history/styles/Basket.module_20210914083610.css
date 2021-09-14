@@ -18,22 +18,11 @@
   font-weight: 700;
   font-size: 1.2rem;
 }
-.imgEmpty {
+.img_Empty {
   margin: 0 auto;
   align-self: center;
   margin-left: 5em;
-  width: 50%;
-}
-.imgEmpty {
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-.imgEmpty h1 {
-  position: absolute;
-  top: 75px;
-  bottom: 0;
-  color: white;
+  border: 5px solid red;
 }
 
 .description {
