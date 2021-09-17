@@ -2,8 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-// import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-
 function LoginBtn({ useLog }) {
   const renderAuth = () => {
     if (useLog) {
@@ -26,7 +24,8 @@ function LoginBtn({ useLog }) {
       return (
         <Link href="/api/auth/login">
           <a>
-            <h3>Login</h3>
+            {" "}
+            <h2>Login</h2>{" "}
           </a>
         </Link>
       );
