@@ -2,7 +2,7 @@
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 
-//!  Protecting a Client-Side from Rendered (CSR) Page
+//!  Protecting a Client-Side Rendered (CSR) Page
 import { withPageAuthRequired } from "@auth0/nextjs-auth0"; //this for the authentication
 
 import React from "react";
@@ -27,12 +27,11 @@ function Basket({ user }) {
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
 
-  // * THIS FUNC WILL GET EXECUTED WHEN THE USER CLICK PROCEED TO PAYMENT BUTTON
   const createCheckoutSession = async () => {
     const stripe = await stripePromise;
     const checkoutSession = await axios.post("/api/stripe/checkout_sessions", {
-      items: items, //THE ITEMS INSIDE THE CART
-      email: user.email, //THE USER EMAIL
+      items: items,
+      email: user.email,
     });
     const result = await stripe.redirectToCheckout({
       sessionId: checkoutSession.data.id,
@@ -42,7 +41,6 @@ function Basket({ user }) {
       alert(result.error.message);
     }
   };
-  // *END
 
   return (
     <div className={styles.basket__container}>
@@ -109,6 +107,7 @@ function Basket({ user }) {
             This price is exclusive of taxes. GST will be added during checkout.
           </small>
           {total > 0 ? (
+            // <form action="" method="POST">
             <button
               role="link"
               onClick={createCheckoutSession}
@@ -117,9 +116,12 @@ function Basket({ user }) {
               Proceed to Payment
             </button>
           ) : (
-            <button className={styles.btn__un_proceed} disabled>
-              You can not Proceed with Payment
-            </button>
+            // </form>
+            <form>
+              <button className={styles.btn__un_proceed} disabled>
+                You can not Proceed with Payment
+              </button>
+            </form>
           )}
         </div>
       </div>

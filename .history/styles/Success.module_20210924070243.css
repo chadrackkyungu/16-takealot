@@ -1,0 +1,20 @@
+.Success__container {
+  margin-top: 7em;
+}
+.Success__message {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  border-radius: 5px;
+  text-align: center;
+}
+.Success__sms h1 {
+  color: green;
+}
+.Success__message p {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

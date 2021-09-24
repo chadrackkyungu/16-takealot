@@ -1,0 +1,41 @@
+.Success__container {
+  margin-top: 7em;
+  margin-bottom: 4em;
+}
+.Success__message {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  border-radius: 5px;
+  text-align: center;
+}
+.Success__sms h1 {
+  color: green;
+}
+.Success__message p {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.Success__message button {
+  background: #3b41dc;
+  color: white;
+  margin-top: 1em;
+  padding: 1em 3em;
+  box-shadow: 4px 3px 8px 1px #fafafa;
+  -webkit-box-shadow: 4px 3px 8px 1px #dfdfdf;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.Success__message button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 8px 1px #858585;
+  -webkit-box-shadow: 0px 5px 8px 0px #858585;
+  transition: all 0.2s ease-in-out;
+}

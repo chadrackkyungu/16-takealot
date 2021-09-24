@@ -12,14 +12,17 @@
     "@auth0/nextjs-auth0": "^1.5.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@mui/icons-material": "^5.0.0",
-    "@mui/material": "^5.0.0",
+    "@mui/icons-material": "^5.0.1",
+    "@mui/material": "^5.0.1",
     "@reduxjs/toolkit": "^1.6.1",
+    "@stripe/stripe-js": "^1.18.0",
+    "axios": "^0.21.4",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-redux": "^7.2.5",
-    "react-responsive-carousel": "^3.2.21"
+    "react-responsive-carousel": "^3.2.21",
+    "stripe": "^8.176.0"
   },
   "devDependencies": {
     "eslint": "7.32.0",

@@ -21,6 +21,8 @@ function Save({ user }) {
   const dispatch = useDispatch();
   const allFav_items = useSelector(selectAllFav_Items);
 
+  // console.log(user);
+
   return (
     <div>
       <div className={styles.save__container}>
