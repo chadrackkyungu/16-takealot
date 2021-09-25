@@ -1,0 +1,29 @@
+
+Note: when you click on the item and it takes to the details page that page should always follow this structured which is inside here 
+/pages/productDetails/[id]/index.js
+
+
+for Rexux installation 
+# NPM
+npm install react-redux
+npm install @reduxjs/toolkit
+
+
+Stripe payments
+===============
+npm install stripe
+npm install @stripe/stripe-js
+npm install axios
+
+
+for Webhooks
+============
+npm install micro
+npm install firebase-admin
+npm install firebase
+
+
+
+
+
+http://localhost:3000/api/auth/callback

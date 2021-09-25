@@ -21,7 +21,7 @@ import { useUser } from "@auth0/nextjs-auth0"; //! for authentication
 function LeftSideBar() {
   const { user, error, isLoading } = useUser();
 
-  console.log(user);
+  // console.log(user);
 
   const items = useSelector(selectItems);
   const allFav_Item = useSelector(selectAllFav_Items);
