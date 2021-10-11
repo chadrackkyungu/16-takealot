@@ -8,12 +8,9 @@ import db from "../Firebase";
 import { useRouter } from "next/router";
 
 // import { getSession } from "next-auth/react";
-// import { useSession, getSession } from "next-auth/react";
-import { withApiAuthRequired, getSession } from "@auth0/nextjs-auth0";
 
 function Orders({ orders }) {
   const router = useRouter();
-  const { data: session } = useSession();
 
   console.log(orders);
 
@@ -23,7 +20,7 @@ function Orders({ orders }) {
       <main>
         <h1>Your orders</h1>
 
-        {session ? (
+        {orders ? (
           <h2>
             {orders.length > 0 ? (
               <>
@@ -69,11 +66,12 @@ export default Orders;
 // Tells nextJS that's no longer a static page
 // eg "Please calculate smthg and send it to the user next"
 // Here, it's executed by Node.js
-export async function getServerSideProps(context) {
+export async function getServerSideProps(req, res) {
   const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
   // Get the user logged in credentials...
-  const session = await getSession(context);
+  // const session = await getSession(context);
+  const session = await getSession({ req });
 
   if (!session) {
     return { props: {} };

@@ -7,13 +7,10 @@ import db from "../Firebase";
 // import moment from 'moment';
 import { useRouter } from "next/router";
 
-// import { getSession } from "next-auth/react";
-// import { useSession, getSession } from "next-auth/react";
-import { withApiAuthRequired, getSession } from "@auth0/nextjs-auth0";
+import { getSession } from "next-auth/react";
 
 function Orders({ orders }) {
   const router = useRouter();
-  const { data: session } = useSession();
 
   console.log(orders);
 
@@ -23,7 +20,7 @@ function Orders({ orders }) {
       <main>
         <h1>Your orders</h1>
 
-        {session ? (
+        {orders ? (
           <h2>
             {orders.length > 0 ? (
               <>
@@ -108,8 +105,6 @@ export async function getServerSideProps(context) {
   );
 
   return { props: { orders } }; //this pass all the order to the comp As a props
-
-  res.end();
 }
 
 // ! firebade documentation

@@ -7,13 +7,10 @@ import db from "../Firebase";
 // import moment from 'moment';
 import { useRouter } from "next/router";
 
-// import { getSession } from "next-auth/react";
-// import { useSession, getSession } from "next-auth/react";
-import { withApiAuthRequired, getSession } from "@auth0/nextjs-auth0";
+import { getSession } from "next-auth/react";
 
 function Orders({ orders }) {
   const router = useRouter();
-  const { data: session } = useSession();
 
   console.log(orders);
 
@@ -23,7 +20,7 @@ function Orders({ orders }) {
       <main>
         <h1>Your orders</h1>
 
-        {session ? (
+        {orders ? (
           <h2>
             {orders.length > 0 ? (
               <>
@@ -73,7 +70,7 @@ export async function getServerSideProps(context) {
   const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
   // Get the user logged in credentials...
-  const session = await getSession(context);
+  // const session = await getSession(context);
 
   if (!session) {
     return { props: {} };
