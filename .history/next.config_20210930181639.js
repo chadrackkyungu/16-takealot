@@ -5,6 +5,6 @@ module.exports = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   env: {
-    stripe_public_key: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
+    stripe_public_keys: process.env.STRIPE_SECRET_KEY,
   },
 };

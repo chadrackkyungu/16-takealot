@@ -16,7 +16,6 @@ const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 const fulfillOrder = async (session) => {
   // console.log("Fullfill order", session);
-
   return app
     .firestore()
     .collection("users")

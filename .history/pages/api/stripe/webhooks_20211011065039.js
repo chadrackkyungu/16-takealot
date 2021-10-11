@@ -15,8 +15,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 const fulfillOrder = async (session) => {
-  // console.log("Fullfill order", session);
-
+  console.log("Fullfill order", session);
   return app
     .firestore()
     .collection("users")

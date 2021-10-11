@@ -75,16 +75,16 @@ export async function getServerSideProps(context) {
   }
 
   // const usersCol = collection(db, "users");
-  // const usersCol = collection(db, "orders");
-  // const stripeOrders = await getDocs(usersCol, "orders");
+  const usersCol = collection(db, "orders");
+  const stripeOrders = await getDocs(usersCol, "orders");
 
   // Firebase db
-  const stripeOrders = await db
-    .collection("users")
-    .doc(session.user.email)
-    .collection("orders")
-    .orderBy("timestamp", "desc")
-    .get();
+  // const stripeOrders = await db
+  //   .collection("users")
+  //   .doc(session.user.email)
+  //   .collection("orders")
+  //   .orderBy("timestamp", "desc")
+  //   .get();
 
   //Stripe orders
   const orders = await Promise.all(

@@ -22,7 +22,5 @@ npm install micro
 npm install firebase-admin
 npm install firebase
 
-//Note: this line here is the location of where the webhooks.js file is and this line will help you get the webhooks [key]
-stripe listen --forward-to localhost:3000/api/stripe/webhooks   => this is the directory   api/stripe/webhooks
 
 http://localhost:3000/api/auth/callback

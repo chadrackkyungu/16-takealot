@@ -1,9 +1,10 @@
+import Stripe from "stripe";
 import { buffer } from "micro";
 import * as admin from "firebase-admin";
 
-const serviceAccount = require("../../../permissions.json");
+var serviceAccount = require("../../../permissions.json");
 
-const app = !admin.apps.length
+var app = !admin.apps.length
   ? admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
     })
@@ -15,8 +16,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 const fulfillOrder = async (session) => {
-  // console.log("Fullfill order", session);
-
+  console.log("Fullfill order", session);
   return app
     .firestore()
     .collection("users")
@@ -43,16 +43,23 @@ export default async (req, res) => {
     const signature = req.headers["stripe-signature"];
 
     let event;
+    //Verify that the Event poste came from stripe.
     try {
       event = stripe.webhooks.constructEvent(payload, signature, webhookSecret);
     } catch (err) {
-      console.log("ERROR", err.message);
+      console.log(`❌ Error message: ${err.message}`);
       return res.status(400).send(`Webhook Error: ${err.message}`);
     }
+
+    console.log("✅ Success:", event.id);
+    console.log("✅ Success:", event);
 
     if (event.type === "checkout.session.completed") {
       const session = event.data.object;
 
+      console.log(session);
+
+      //Fulfill the order means put it in the database
       return fulfillOrder(session)
         .then(() => res.status(200))
         .catch((err) => res.status(400).send(`webhook Error: ${err.message}`));
