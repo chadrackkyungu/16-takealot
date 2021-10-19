@@ -15,4 +15,4 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 // const auth = getAuth(auth) //* in case they where authentication this is how you will import it
 
-export { db };
+export default db;

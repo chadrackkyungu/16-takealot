@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../Firebase";
-import { collection, getDocs, doc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
 function Orders({ user }) {
@@ -23,14 +23,11 @@ function Orders({ user }) {
   //     );
   // }, [user.email]);
   useEffect(() => {
-    async function dataDB() {
-      const allData = doc(db, "users", "chadrackkyungu624@gmail.com");
-      const dataDB = await getDocs(allData);
-      const BDdata = dataDB.data();
-
-      setPosts(BDdata);
-    }
-    dataDB();
+    const user = getDocs(collection(db, "users"));
+    user.forEach((doc) => {
+      console.log(doc.id, " => ", doc.data());
+      setPosts(doc.data());
+    });
   }, [user.email]);
 
   console.log(posts);

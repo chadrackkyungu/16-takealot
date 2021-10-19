@@ -24,7 +24,7 @@ function Orders({ user }) {
   // }, [user.email]);
   useEffect(() => {
     async function dataDB() {
-      const allData = doc(db, "users", "chadrackkyungu624@gmail.com");
+      const allData = doc(db, "users");
       const dataDB = await getDocs(allData);
       const BDdata = dataDB.data();
 
